@@ -1,0 +1,18 @@
+Returns true if the arguments are equal to each other and false otherwise. Consequently, if both arguments are null, true is returned. Otherwise, if the first argument is not null, equality is determined by calling the equals method of the first argument with the second argument of this method. Otherwise, false is returned.
+Parameters:
+a - an object
+b - an object to be compared with a for equality
+Returns:
+true if the arguments are equal to each other and false otherwise
+See Also:
+Object.equals(Object)
+public static boolean deepEquals(Object a,
+ Object b)
+Returns true if the arguments are deeply equal to each other and false otherwise. Two null values are deeply equal. If both arguments are arrays, the algorithm in Arrays.deepEquals is used to determine equality. Otherwise, equality is determined by using the equals method of the first argument.
+Parameters:
+a - an object
+b - an object to be compared with a for deep equality
+Returns:
+true if the arguments are deeply equal to each other and false otherwise
+See Also:
+Arrays.deepEquals(Object[], Object[]), equals(Object, Object)
